@@ -1,0 +1,185 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+}
+
+/* Header */
+header h1 {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  color: #000000;
+
+  margin-top: 71px;
+}
+
+header h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #000000;
+
+  margin-top: 38px;
+}
+
+header p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+
+  margin-top: 10px;
+  width: 90%;
+}
+
+/* content */
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin-top: 78px;
+}
+
+.container .crew .photo {
+  display: flex;
+}
+
+.container .crew .photo img {
+  width: 138.72px;
+  height: 209px;
+  object-fit: cover;
+}
+
+.container .crew .photo aside p {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #000000;
+
+  margin-left: 6.28px;
+  writing-mode: vertical-rl;
+}
+
+.container .crew h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+
+  margin-top: 10px;
+}
+
+.container .crew:nth-child(even) {
+  margin-top: 50px;
+}
+
+/* footer */
+.footer p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9a9a9;
+  text-align: center;
+
+  margin-top: 88px;
+  margin-bottom: 69px;
+}
+
+/* Tablet Version */
+@media only screen and (min-width: 768px) {
+  header {
+    margin: auto;
+    width: 70%;
+  }
+  .container {
+    justify-content: space-evenly;
+  }
+}
+
+/* Desktop Version */
+@media only screen and (min-width: 1024px) {
+  body {
+    width: 80%;
+  }
+
+  header {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  header h1 {
+    margin-top: 110px;
+    margin-bottom: -20px;
+    grid-column: 1;
+    grid-row: 1 / 2;
+  }
+
+  header h2 {
+    grid-column: 2;
+    align-self: end;
+  }
+
+  header p {
+    grid-column: 2;
+  }
+
+  header p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .container .crew .photo img {
+    width: 238px;
+    height: 341px;
+  }
+
+  .container .crew .photo aside p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .container .crew h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .container .crew:nth-child(even) {
+    margin-top: 0px;
+  }
+
+  .container .crew:nth-child(3n + 2) {
+    margin-top: 100px;
+  }
+
+  .footer p {
+    margin-top: 109px;
+    margin-bottom: 30px;
+  }
+}
